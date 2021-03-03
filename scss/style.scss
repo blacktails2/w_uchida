@@ -30,296 +30,100 @@ body {
   font-family: $body;
   color: #111111;
   line-height: 1.7;
+  overflow-x: hidden;
   @include touch {
     font-size: 14px;
     line-height: 1.6;
   }
 }
+.ct_number,
+.ct_alpha {
+  font-size: 1.2em;
+  vertical-align: 2%;
+}
 .head {
   margin: 50px;
+  padding-top: 80px;
   padding-bottom: 50px;
+  text-align: center;
   @include mobile {
-    margin: 50px 20px;
+    margin: 120px 20px 50px;
     padding-bottom: 20px;
+    padding-top: 0px;
   }
   &__title {
     font-family: $body;
     font-size: 32px;
     letter-spacing: 6px;
+    @include mobile {
+      font-size: 24px;
+      letter-spacing: 4px;
+    }
   }
   &__subtitle {
-    font-family: $body;
+    font-family: $head-en;
     color: $gray;
-    font-size: 13px;
-    margin-top: -5px;
-    margin-bottom: 40px;
+    font-size: 32px;
+    margin-top: 10px;
+    @include mobile {
+      font-size: 24px;
+      margin-top: 5px;
+    }
   }
   &__date {
     font-family: $head-it;
     font-size: 21px;
     line-height: 1.2;
-    margin-bottom: 15px;
+    margin-top: 20px;
   }
   &__close {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     line-height: 1.3;
+    margin-top: 5px;
+  }
+  &__oneroom {
+    margin-bottom: 30px;
+    @include mobile {
+      font-size: 13px;
+      br {
+        display: none;
+      }
+    }
   }
   &__logo {
     width: 80px;
     display: block;
-    margin-left: -3px;
-    margin-bottom: 5px;
+    position: fixed;
+    left: 30px;
+    top: 25px;
     transition: all ease 0.4s;
+    z-index: 99;
     &:hover {
       opacity: 0.5;
     }
   }
-  &__dm {
-    color: #111;
-    font-size: 18px;
-    border-bottom: 1px solid #111;
-    padding-bottom: 1px;
-    transition: all ease 0.4s;
-    &:hover {
-      opacity: 0.5;
-    }
-  }
-  &__artists {
-    margin-bottom: 30px;
-    &--gray {
-      color: $gray;
-    }
-  }
-  &__greeting {
-    text-align: justify;
-  }
-}
-.grid {
-  display: grid;
-  width: 100%;
-  grid-template-columns: 50% 50%;
-  img {
+  &__border {
+    height: 1px;
     width: 100%;
-  }
-  &__item--c {
-    grid-row: 1 / 4;
-    grid-column: 1 / 3;
-    position: relative;
-    &::after {
-      content: "atelier une place";
-      position: absolute;
-      left: 8px;
-      top: 4px;
-      opacity: 0.5;
-      color: #111;
-      font-size: 14px;
-      font-family: $body;
-    }
-  }
-  &__item--h {
-    grid-row: 4 / 6;
-    grid-column: 1;
-    position: relative;
-    &::after {
-      content: "石原真理";
-      position: absolute;
-      left: 8px;
-      top: 4px;
-      opacity: 0.5;
-      color: #111;
-      font-size: 14px;
-      font-family: $body;
-    }
-  }
-  &__item--i {
-    grid-row: 4 / 6;
-    grid-column: 2;
-    position: relative;
-    &::after {
-      content: "百草アトリエ";
-      position: absolute;
-      left: 8px;
-      top: 4px;
-      opacity: 0.5;
-      color: #111;
-      font-size: 14px;
-      font-family: $body;
-    }
-  }
-  &__item--d {
-    grid-row: 10 / 12;
-    grid-column: 1;
-    position: relative;
-    &::after {
-      content: "KIMURA`";
-      position: absolute;
-      left: 8px;
-      top: 4px;
-      opacity: 0.5;
-      color: #111;
-      font-size: 14px;
-      font-family: $body;
-    }
-  }
-  &__item--a {
-    grid-row: 10 / 13;
-    grid-column: 2;
-    position: relative;
-    &::after {
-      content: "Organic Vegan Sweets";
-      position: absolute;
-      left: 8px;
-      top: 4px;
-      opacity: 0.5;
-      color: #111;
-      font-size: 14px;
-      font-family: $body;
-    }
-  }
-  &__item--e {
-    grid-row: 12 / 14;
-    grid-column: 1;
-    position: relative;
-    &::after {
-      content: "entrepôt";
-      position: absolute;
-      left: 8px;
-      top: 4px;
-      opacity: 0.5;
-      color: #111;
-      font-size: 14px;
-      font-family: $body;
-    }
-  }
-  &__item--j {
-    grid-row: 14 / 16;
-    grid-column: 1;
-    position: relative;
-    &::after {
-      content: "Jingoro";
-      position: absolute;
-      left: 8px;
-      top: 4px;
-      opacity: 0.5;
-      color: #111;
-      font-size: 14px;
-      font-family: $body;
-    }
-  }
-  &__item--f {
-    grid-row: 13 / 16;
-    grid-column: 2;
-    position: relative;
-    &::after {
-      content: "atelier une place";
-      position: absolute;
-      left: 8px;
-      top: 4px;
-      opacity: 0.5;
-      color: #111;
-      font-size: 14px;
-      font-family: $body;
-    }
-  }
-  &__item--l {
-    grid-row: 20 / 22;
-    grid-column: 2;
-    position: relative;
-    &::after {
-      content: "喫茶クロカワ";
-      position: absolute;
-      left: 8px;
-      top: 4px;
-      opacity: 0.5;
-      color: #111;
-      font-size: 14px;
-      font-family: $body;
-    }
-  }
-  &__item--k {
-    grid-row: 20 / 22;
-    grid-column: 1;
-    position: relative;
-    &::after {
-      content: "Organic Vegan Sweets";
-      position: absolute;
-      left: 8px;
-      top: 4px;
-      opacity: 0.5;
-      color: #111;
-      font-size: 14px;
-      font-family: $body;
-    }
-  }
-  &__item--b {
-    grid-row: 6 / 10;
-    grid-column: 1 / 3;
-    position: relative;
-    &::after {
-      content: "山口和宏";
-      position: absolute;
-      left: 8px;
-      top: 4px;
-      opacity: 0.5;
-      color: #111;
-      font-size: 14px;
-      font-family: $body;
-    }
-  }
-  &__item--g {
-    grid-row: 16 / 20;
-    grid-column: 1 / 3;
-    position: relative;
-    &::after {
-      content: "atelier une place";
-      position: absolute;
-      left: 8px;
-      top: 4px;
-      opacity: 0.5;
-      color: #111;
-      font-size: 14px;
-      font-family: $body;
-    }
-  }
-  &__item--m {
-    grid-row: 22 / 24;
-    grid-column: 1;
-    position: relative;
-    &::after {
-      content: "Organic Vegan Sweets";
-      position: absolute;
-      left: 8px;
-      top: 4px;
-      opacity: 0.5;
-      color: #111;
-      font-size: 14px;
-      font-family: $body;
-    }
-  }
-  &__item--o {
-    grid-row: 22 / 24;
-    grid-column: 2;
-    height: 100%;
-    width: 100%;
-    position: relative;
-  }
-  &__item--p {
-    grid-row: 1;
-    grid-column: 1 / 3;
+    background-color: $lightgray;
   }
 }
 
 .contents {
-  &__newyear {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    font-size: 16px;
-    color: $gray;
+  &__people {
+    font-family: $bold;
+    font-size: 21px;
+    margin-top: 32px;
+    margin-bottom: 3px;
+    letter-spacing: 0.2em;
+    @include tablet-only {
+      margin-right: 20px;
+      font-size: 18px;
+    }
     @include mobile {
-      font-size: 14px;
+      margin-right: 20px;
+      margin-left: 20px;
+      font-size: 18px;
     }
   }
   &__body {
@@ -333,6 +137,21 @@ body {
       margin-right: 20px;
       margin-left: 20px;
       font-size: 14px;
+      margin-bottom: 60px;
+    }
+    &--right {
+      text-align: right;
+      letter-spacing: 1px;
+      @include tablet-only {
+        margin-right: 20px;
+        font-size: 14px;
+      }
+      @include mobile {
+        margin-right: 20px;
+        margin-left: 20px;
+        font-size: 14px;
+        margin-bottom: 60px;
+      }
     }
     &--head {
       font-family: $bold;

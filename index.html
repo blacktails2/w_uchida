@@ -3,42 +3,29 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>百草冬百種展｜ギャルリももぐさ</title>
+    <title>内田京子・冨沢恭子 展｜ギャルリももぐさ</title>
     <link rel="stylesheet" href="css/style.css" />
     <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
     <script src="js/smooth-scroll.min.js"></script>
+    <script src="js/chataTypeSeparater.js"></script>
     <script type="text/javascript" src="//webfont.fontplus.jp/accessor/script/fontplus.js?qdfWifIcjAc%3D&box=zLqMZPcKojI%3D&aa=1&ab=2" charset="utf-8"></script>
   </head>
   <body>
     <section class="head">
       <div class="container is-fluid">
         <div class="columns">
-          <div class="column is-5">
-            <h1 class="head__title">百草冬百種展</h1>
-            <h2 class="head__subtitle">ももぐさふゆのももくさてん</h2>
+          <div class="column">
+            <h1 class="head__title">内田京子・冨沢恭子 展</h1>
+            <h2 class="head__subtitle">one room exhibition</h2>
+            <p class="head__oneroom">常設展示時、三面窓のある白い部屋を中心に数室に展示する展覧会。<br />他の空間は常設展示ですが、内容はその時々により異なります。<br /></p>
             <h3 class="head__date">
-              2021.1.16 sat–1.31 sun<br />
+              2021.3.13 sat–3.28 sun<br />
               11:00–18:00
             </h3>
-            <p class="head__close">
-              会期中休廊日：<br />
-              1.19 tue, 1.27 wed
-            </p>
+            <p class="head__close" id="mixtest">火水休廊 / 作家在廊日: 3.13 sat / 初日のみ予約制（詳細は下部をご覧ください）<br /></p>
             <a href="https://momogusa.jp"><img class="head__logo" src="img/logo.svg" alt="百草ホームページへ" /></a>
-            <a href="img/dm.pdf" class="head__dm">DM — pdf</a>
-          </div>
-          <div class="column">
-            <p class="head__artists">
-              atelier une place<span class="head__artists--gray">｜</span>entrepôt<span class="head__artists--gray">｜</span>Organic Vegan Sweets<span class="head__artists--gray">｜</span>山口和宏<span class="head__artists--gray">｜</span>Jingoro<span class="head__artists--gray">｜</span>KIMURA`<span class="head__artists--gray">｜</span>石原真理<span
-                class="head__artists--gray"
-                >｜</span
-              >喫茶クロカワ<span class="head__artists--gray">｜</span>百草アトリエ
-            </p>
-            <p class="head__greeting">
-              年の初めに色々なもの（百種）をご覧いただく展覧会を｢百草冬百種展（ももぐさ ふゆの ももくさてん）｣と名付け、2001年から始め今回で21回目となります。<br />
-              2021年は東北大震災から10年、また一年前は予測していなかったコロナ禍ですっかり別次元の時代となり、行き先も不明・不安な幕開けです。ただコロナ禍がきっかけとなり、大切な事や真に必要なものに気づかされたように思います。当たり前だと思っていた様々なことへの感謝、人と会えることや、直にものを手に取り、使い、身につけ、味わうことの豊かさ。今年の百草冬百種展は、そんな原点に帰り、いつも、ずっと身につけていたいもの、使い続けたいものを変わらず作る旧来の仲間やその縁で繋がった皆さんの尊い仕事を、有り難さと喜びを分かち合いご紹介したいと思います。同時に、全ての作り手の皆様と使い手のお客様の存在のおかげで今が在ることにも、深く感謝しております。
-            </p>
+            <div class="head__border"></div>
           </div>
         </div>
       </div>
@@ -47,128 +34,59 @@
       <div class="container is-fluid">
         <div class="columns">
           <div class="column is-7">
-            <div class="grid">
-              <div class="grid__item--c"><img src="img/grid_c.jpg" alt="" /></div>
-              <div class="grid__item--h"><img src="img/grid_h.jpg" alt="" /></div>
-              <div class="grid__item--i"><img src="img/grid_i.jpg" alt="" /></div>
-              <div class="grid__item--d"><img src="img/grid_d.jpg" alt="" /></div>
-              <div class="grid__item--a"><img src="img/grid_a.jpg" alt="" /></div>
-              <div class="grid__item--e"><img src="img/grid_e.jpg" alt="" /></div>
-              <div class="grid__item--f"><img src="img/grid_f.jpg" alt="" /></div>
-              <div class="grid__item--j"><img src="img/grid_j.jpg" alt="" /></div>
-              <div class="grid__item--k"><img src="img/grid_k.jpg" alt="" /></div>
-              <div class="grid__item--b"><img src="img/grid_b.jpg" alt="" /></div>
-              <div class="grid__item--g"><img src="img/grid_g.jpg" alt="" /></div>
-              <div class="grid__item--o">
-                <p class="contents__newyear">本年もどうぞ<br />宜しくお願い申し上げます</p>
-              </div>
-              <div class="grid__item--l"><img src="img/grid_l.jpg" alt="" /></div>
-              <div class="grid__item--m"><img src="img/grid_m.jpg" alt="" /></div>
-            </div>
+            <img src="img/uchida1.jpg" alt="内田京子さんのピッチャー" class="is-hidden-mobile" />
+            <img src="img/uchida2.jpg" alt="内田京子さんのカップ" class="is-hidden-mobile" />
+            <img src="img/tomisawa1.jpg" alt="冨沢恭子さんのカバン" class="is-hidden-mobile" />
+            <img src="img/tomisawa2.jpg" alt="冨沢恭子さんのカバン" class="is-hidden-mobile" />
+            <img src="img/tomisawa3.jpg" alt="冨沢恭子さんのカンカンバッチ" class="is-hidden-mobile" />
           </div>
           <div class="column is-1 is-hidden-touch is-hidden-desktop-only is-hidden-widescreen-only"></div>
           <div class="column">
             <p class="contents__body">
-              <span class="contents__body--head">atelier une place 鈴木麻美・鈴木丈志</span><br />
-              <span class="contents__body--gray">定番の衣服、ハンカチ、タオルに加え、新作の衣服、袋類、フリークロス、ストール、スカートハンガーなど</span><br />
-              布製品を作る夫婦ユニット<br />
-              鈴木麻美 1970年生まれ<br />
-              1985 高校に入学して間もなく絵画教室に通い始める<br />
-              1986 高校2年の4月から被服専門学校の洋裁教室に通い始める<br />
-              1988 高校卒業後　被服専門学校に正式入学する<br />
-              1990 専門学校卒業後　高級注文服縫製見習いを経て、既製服会社のデザインなど既製服に関わる仕事に従事　<br />
-              その間は既製服に関わる講義を受けたり、卒業した洋裁学校、美術、デッサンの教室に通う<br />
-              1996 ユヌプラスという店名にて小さなセレクトショップを始める<br />
-              2001 結婚を機にセレクトショップを閉め、改めて一から形にしていく<br />
-              2007 このころより夫に少しずつ手伝ってもらい現在の形になる<br />
-              全ての製品を2人で製作<br />
-              鈴木丈志　ミシンワーク全般・タオル、ハンカチ製作など<br />
-              鈴木麻美　ハンドワーク全般・企画・デザイン・パターン・衣服裁断・洗い・仕上げなど<br />
+              二人のきょうこさんに、この度one room exhibition をお願いしました。<br />内輪では「W Kyoko展」と呼んでいますが、お名前が同じだけでない繋がりがあります。<br />お二人が初期から作品を発表していらっしゃった「ギャラリーブリキ星」。時間差がありますが二枚のDMを忘れられません。<br />一枚は内田京子さんのブリキ星初個展のDM。京子さんとは運命的な出会いがあり、共にお腹に第二子を宿していた時に、伊賀でお会いしました。その後百草を始めてから頂いた一枚の葉書。子育てが一段落し再開された個展の葉書の、土器のような肌と簡潔でおおらかなフォルムの美しい優しい作品に釘付けになりました。心の中で「やっぱり」と、京子さんと作品が完全に一致しました。慌ただしい毎日を送っていた自分にとって、それは刺激的な出来事でした。以来ずっと憧れと尊敬の存在です。<br />もう一枚は冨沢恭子さんのDMです。「ギャラリーブリキ星」さんでの最後の企画展のDM「世界のへんてこ」。土偶ならぬ布偶と呼ばれる、まるで時を経て味わいが深まった古い布で作られたかのような風合いの、一度見たら忘れられない愛すべきへんてこ人形の作品がDMに載っていて、気になりずっと手帳に挟み持ち歩いていました。前後して、気になる方々が持っている大きくプリミティブな柿渋染めのかばんが同じ方の手になるものであったことを知り、ほどなくして自然なご縁を通し繋がったのでした。<br />そしてお二人がお知り合いであることも知りました。<br />元々、やらなければならないことが常にできていない状況なこともあり情報収集は苦手で、積極的に触手を伸ばすタイプでないこともあり、出会いは遅いと思います。でも、「自然なご縁」により好きなもの、好きな方と繋がったそのタイミングが、最適なご縁と考えるようになりました。再会していてもお互いに心惹かれていなければすれ違ってしまいます。<br />私の中では「ブリキ星」でお二人とは繋がっていたように思います。<br />そしてお二人の作品に惹かれている共通点に気づきました。陶と布、素材は異なりますが、<br />素材選び（素地作り）、かたち、ディテイルに、臆せず衒いなく、ご自身そのものが表れている、ということです。当たり前の様に思いますが、なかなか難しいことと思います。<br />そしてブリキ星の加川さんはそのような作品を見出す眼を持っていらしたのだと思います。なるほどブリキ星さんで頂いた古道具も、未だにキッチンでレギュラーとして働いてくれている、衒いのない道具たちです。<br />内田京子さんと冨沢恭子さんには、それぞれに何度か百草で展示をお願いしていますが、今回の百草で、新しいお二人の作品を同じ空間で拝見できるのを、また「京子さん」「恭子ちゃん」と呼び合うお二人にお会い出来ることを心から楽しみにしております。<br />皆様にも是非、お二人と作品に触れ、優しく穏やかな気持ちになって頂き、明るく元気な春を迎えて頂きたいと希います。<br />
+            </p>
+            <p class="contents__body--right">安藤明子</p>
+            <img src="img/uchida1.jpg" alt="内田京子さんのピッチャー" class="is-hidden-tablet" />
+            <img src="img/uchida2.jpg" alt="内田京子さんのカップ" class="is-hidden-tablet" />
+            <h4 class="contents__people">内田京子</h4>
+            <p class="contents__body">
+              <span class="contents__body--gray">ピッチャー形花入れ、ボウル、マグカップ</span><br /><br />
+              1969 三重県四日市市に生まれる<br />
+              1990 愛知県立瀬戸窯業高等学校陶芸専攻科修了<br />
+              1992 三重県四日市市に工房を構える<br />
+              1993 初個展<br />
+              現在に至る<br />
               <br />
-              <span class="contents__body--head">entrepôt 大鹿朋子</span><br />
-              <span class="contents__body--gray">毛糸のパンツ、みつろうそく</span><br />
-              百草退後職、2007年多治見市内の旧郵便局の建物にてentrepôt（オントルポ=フランス語で倉庫の意）という店を始める。アトリエユヌプラスさんの布製品を中心に、オリジナルの靴下、大鹿裕之の竹籠、石原真理さんのウール小物などを置かせていただく。<br />
-              その後、建物の耐震問題、自身の引っ越しが重なり、移転。中津川市内の自宅敷地内に小屋を建て再開するが、現在は竹籠の作業場になっている。<br /><br />
-              <span class="contents__body--head">竹籠 大鹿裕之</span><br />
-              <span class="contents__body--gray">竹籠</span><br />
-              会社員、山仕事など様々な職業を経て、使う物すべてを自分の手で作りたいという思いから、愛知県奥三河で山暮らしを始める。<br />
-              1993年頃、三州足助屋敷へ炭焼きを習いに行くが、二つ隣の竹屋さんに不思議と惹かれ、竹細工の基礎を習う。<br />
-              その後は、民俗資料館で古いかごを見るなどして、独学を続けながら、今に至る。<br />
-              現在は、薪作りなど暮らしに必要な仕事をしながら、竹籠を作る。<br />
-              趣味は電子工作。<br /><br />
-              <span class="contents__body--head">Organic Vegan Sweets 田中あづさ</span><br />
-              <span class="contents__body--gray">菓子、コンフィチュール、ヴィーガンバター、サンドイッチスプレッドなど | 販売日1.16, 25, 31</span><br />
-              アメリカ Seattleのveganレストランにてペイストリーシェフを勤めた後2002年に帰国。<br />
-              同年「Organic Vegan Sweets」を立ち上げる。白砂糖、卵、乳製品、動物性のものは一切使用せず、厳選したオーガニック食材を贅沢に使用したヴィーガン、マクロビオティックスタイルの身体に優しいお菓子をご提案しております。<br />
+              今回、明子さんからお声がけいただき、もう20年以上前に西荻のギャラリーブリキ星で出会った、富澤恭子さんとの2人展というご縁をいただき、百草の空間に2人の作品がどんな風に見られるのか私自身がとても楽しみにしています。
+            </p>
+            <img src="img/tomisawa1.jpg" alt="冨沢恭子さんのカバン" class="is-hidden-tablet" />
+            <img src="img/tomisawa2.jpg" alt="冨沢恭子さんのカバン" class="is-hidden-tablet" />
+            <img src="img/tomisawa3.jpg" alt="冨沢恭子さんのカンカンバッチ" class="is-hidden-tablet" />
+            <h4 class="contents__people">冨沢恭子</h4>
+            <p class="contents__body">
+              <span class="contents__body--gray">きれいな色のかばん（韓国のシルク）、sunuiのカンカンバッチ</span><br /><br />
+              1979　埼玉県生まれ<br />
+              2004　武蔵野美術大学大学院　工芸工業デザイン学科テキスタイル専攻修了<br />
               <br />
-              <span class="contents__body--head">山口和宏</span><br />
-              <span class="contents__body--gray">木の器</span><br />
-              1956年生まれ<br />1986年 福岡県うきは市で木工をはじめる。素材のもつ特性を大事にしながらデザインし、カッティングボードやパン皿、トレーのほか、テーブルや椅子の家具などの制作をしている。<br />2018年 木工品と喫茶のお店jingoroをオープン。jingoroは祖父の名前です。<br />
+              柿渋染め作家/sunuiとしても活動<br />
+              パターンは使わず、布を触ってその表情を追ってミシンで縫い立ち上げながら形にしていくためそのほとんどが１点もの<br />
+              <a href="https://www.instagram.com/tomizawakyoko">instagram @tomizawakyoko</a><br />
               <br />
-              <span class="contents__body--head">Jingoro</span><br />
-              <span class="contents__body--gray">焼菓子・スコーンなど</span><br />
-              耳納連山と筑後川に挟まれ、果樹園や畑など田園風景が広がるのどかな場所、うきは。<br />
-              そんな耳納連山の麓で営む木の生活道具を作る工房と、それらの木の道具を展示する場と実際に使うことのできる喫茶のお店です。<br />
-              30年以上この地で木工作家として活動してきた山口和宏と、娘夫婦の明田一城、ふき子の3人で、木に向き合いながら、珈琲豆を焙煎したり、パンやお菓子を焼いたりと、日々楽しく過ごしつつ、木の椅子やテーブルなどの家具類、ボウルや皿などのうつわ類を、この場所で実際に使ってもらい、体感し、木の道具に親しんでいただきたい…そして使っている材について、お手入れ方法、何よりも木の道具の良さを直接お伝えしていければという思いで営んでいます。<br />
+              sunui/素縫い<br />
+              冨沢恭子、片平晴奈、白石陽子、根岸麻子の4人で2004年より活動。武蔵野美術大学工芸工業デザイン学科（インテリア、木工、テキスタイル、金工）卒業。<br />
               <br />
-              <span class="contents__body--head">明田ふき子 (Jingoro)</span><br />
-              1991 福岡県の県境で木工を生業にしている父と公務員の母のもとに生まれる。一人っ子で、まわりにはちょっと変わった大人ばかりの中、甘やかされながらスクスク、時々トゲトゲしく成長。小学1年生の頃から憧れていた高校にも入学して電車で片道1時間半毎日通う。<br />
-              2010 東京農業大学に入学。都会に染まりきれず大根とイモにまみれた4年間を過ごす。<br />
-              2018 地元うきはで木の道具と喫茶のお店 jingoroをはじめる。<br />
+              旅先で集めたものを素材にアクセサリーを作る。グラフィック、ウェブ、ディスプレイデザインなど幅広く活動。小さなものも大きな空間も、手触りのあるものづくりを心がけている。<br />
               <br />
-              <span class="contents__body--head">KIMURA` 木村友美</span><br />
-              <span class="contents__body--gray">靴下</span><br />
-              2005 百草のスタッフになる<br />
-              当時スタッフだった朋子さん（のちにオントルポを始められる）と出会う<br />
-              うつくしいものに触れながら、夢中ではたらく<br />
-              2011 自身で何か始めるべく、百草を卒業することにする<br />
-              オントルポの肌着や靴下の製作が終了することを朋子さんより聞く同時に靴下を製作しないかと声をかけていただく<br />
-              2012 1月 百草を卒業、11月KIMURA`を立ち上げ、オントルポの靴下を一部引継ぐ形で製作開始<br />
-              2013 オリジナルの靴下を作りはじめる<br />
-              2017 コラボソックス「momogusa * KIMURA`」の製作がはじまる<br />
-              2019 「MONO JAPAN 2019」出展（アムステルダム）<br />
+              代表作の「カンカンバッチ」は、2010年 第一回 ほぼ日作品大賞受賞。2016年 作品集「カンカンバッチ」（西日本新聞社）を出版。<br />
+              <a href="sunui.jp">sunui.jp</a><br />
               <br />
-              <span class="contents__body--head">石原真理</span><br />
-              <span class="contents__body--gray">手袋、靴下、フード</span><br />
-              羊やアルパカの毛糸など、自然素材を使って編み物をしています。子どもの頃にちかしいひとたちが編んでくれたあったかグッズを思い出しながら、寒がりの私でも冬が楽しめるような物を作っています。
-              <br /><br />
-              <span class="contents__body--head">喫茶クロカワ 黒川哲二</span><br />
-              <span class="contents__body--gray">珈琲豆</span><br />
-              2005年、アフリカ旅行中に立ち寄ったエチオピアでコーヒーセレモニーを体験する機会がありました。<br />
-              エチオピアはコーヒー文化発祥の地ともいわれる国、コーヒーセレモニーは日本の茶道にも通ずるエチオピアの伝統的な感謝ともてなしの日常儀式です。淹れてもらったコーヒーは洗練とはほど遠く、野性味と土の香りに満ちたものでしたが、セレモニーに招かれ、その歴史と意味に触れとても嬉しかったのを覚えています。<br />
-              その記憶とエチオピアから持ち帰ったコーヒー豆で出張喫茶を開始、手網で焙煎したコーヒー豆で出張喫茶を継続、2014年に名古屋の鶴舞で喫茶店を始めました。<br />
+              [布の可塑性]<br />
+              洗いにかけるときゅっと目が詰まって縮み、逆に力をかけて伸ばすと繊維が伸びてゆらぎが生まれる。布という素材には、粘土にも近い[可塑性]のようなものがあると思っています。足したり引いたりしながらフリーハンドでかたどってはめこむことができる。その成型力、適応性、柔軟さを楽しみながら選んだ布が持つ偶有性を指先に感じながら縫い立ち上げ、かばんを作っています。<br />
               <br />
-              <span class="contents__body--head">百草アトリエ（衣生活研究処）・安藤明子</span><br />
-              <span class="contents__body--gray">uneplace*momogusaコラボサロン、kitta*momogusaコラボ裾あったかサロン、フレアゴムスカート（アンダー兼）、出産お祝いセットなど</span><br />
-              結婚を機に衣生活を考察、常服となる型を模索し制作していたが、1998年百草オープンと同時に家屋の一室で、一人のスタッフとサロンをはじめとする衣服や布製品シリーズを手掛け始める。<br />
-              以来、ギャラリー運営と子育ての傍ら、和裁・洋裁の内職さん、代々のアトリエスタッフと共に取り組み、制作範囲に抱っこ紐や子どもの衣料なども加わる。<br />
-              現在では主にディレクションを担当し、一点もの、素材によりディテールを変えているものなどはアトリエ内でスタッフ（山田、鶴、薄田）により制作。布製品シリーズや定番サロン・上衣やタブリエは、長く経験を積んだ内職さん、信頼関係のある縫製所、ベテランOBの助けも借りている。<br />
+              今回は明るく美しい透け感がある韓国のシルクの生地を選びました。繊細でありながらとても強く、たくましい布。ハリのある布のところどころには、本来繭ひとつひとつについている果物のヘタのような固い部分も一緒に紡がれ織り込まれている。洗いにかけると全体にあらわれる独特なシャリ感とぽこぽことした立体感。プレスすればフラットな印象にもなるし、くしゃくしゃのまま乾燥させればまるでプラスチックバッグのようにも見える。そういったシルクならではの特性に触れるたびに惚れぼれとしています。かばんとしての強度を増すためにたくさん入れているミシンステッチはふっくらと空気をはらみ、まるでやわらかな塑像のようなかばんができました。軽やかな品がある特別なかばん女性はもちろん、男性にも楽しんでいただけたらうれしいです。<br />
               <br />
-              （以下、初心を振り返ってみました）<br />
-              ⃝制作のコンセプト | 必要は発明の母。布を生かすための必要最低限手を入れる。最小限の仕掛けで最大限の用途。必要な始末の手は惜しまない。目指すところは、用途を離れても布の生命を宿すオブジェ。<br />
-              ⃝百草開廊に際しての目標 | 使い続けて美しくなっていくもの、価値が増していくもののみを扱い、作る。布など消耗していくものは、繕いつつ最後雑巾になるまで使い切れるもの。また繰り返し手に入るものを提供できること。<br /><br />
-              <span class="contents__body--head">在廊日</span><br />
-              <span class="contents__body--gray">*1.16 sat</span><br />
-              atelier une place｜entrepôt大鹿朋子｜Organic Vegan Sweets｜山口和宏｜KIMURA`｜石原真理<br />
-              <span class="contents__body--gray">*1.25 mon</span><br />
-              喫茶クロカワ｜Organic Vegan Sweets<br />
-              <span class="contents__body--gray">*1.31 sun</span><br />
-              Organic Vegan Sweets<br /><br />
-              <span class="contents__body--head">イベント</span><br />
-              <span class="contents__body--gray">*1.16 sat</span><br />
-              「Organic Vegan Sweets｜焼菓子他販売」玄関の土間にて<br />
-              「喫茶クロカワのインスタント珈琲スタンド｜水出しで仕込んだ珈琲エキスからつくるコーヒー・カフェオーレとクロカワの焼菓子」百草カフェにて
-              <br />
-              <span class="contents__body--gray">*1.25 mon</span><br />
-              「出張喫茶｜クロカワの珈琲とOrganic Vegan Sweets」百草カフェにて<br />
-              「Organic Vegan Sweets｜焼菓子他販売」百草カフェにて
-              <br />
-              <span class="contents__body--gray">*1.31 sun</span><br />
-              「Organic Vegan Sweets｜ショコラショの日」薪ストーブの土間にて<br />
-              「Organic Vegan Sweets｜焼菓子他販売」百草カフェにて
-              <br /><br />
-              <span class="contents__body--head">ももぐさカフェ</span><br />
-              ルヴァンのパンを使用した軽食をご用意いたします。感染防止のため、店内は間隔を設け席数を減らしております。これまでカフェをお待ち頂いておりました土間が密になってしまうのを避けるため、お待ちいただく場合は、ギャラリーの展示をご覧いただくか、戸外またはお車の中でお待ちください。
+              sunuiのカンカンバッチ<br />
+              かばんと同じシルクの素材を使って、身につけると明るい気分にしてくれるようなバッチを作りました。ニコリとしていただけたらという気持ちを込めてひとつひとつに「You are my sunshine.」という言葉を添えています。
             </p>
           </div>
           <div class="column is-1 is-hidden-desktop-only is-hidden-widescreen-only is-hidden-touch"></div>
@@ -197,6 +115,33 @@
               JR多治見駅より東鉄バス13分「高田口」下車1km<br />
               tel. & fax. 0572 21 3368<br />
               <a class="contents__body--maps" href="https://goo.gl/maps/neoGkGnqd9bb61Rm9">google maps</a><br /><br />
+              <span class="contents__body--head">※初日のみ予約制</span><br />
+              11:00–/12:00–/13:00–<br />
+              ご予約が多い場合には抽選となります。ご購入には点数制限を設けさせていただく場合がございます。<br />
+              <br />
+              <span class="contents__body--gray">＊応募方法</span><br />
+              ご予約方法：メール受付のみ<br />
+              ご予約開始日：3.6（土）AM 10:00より<br />
+              ※ご予約の際はmomogusa@momogusa.jpからの受信ができますよう設定をお願いいたします。<br />
+              <br />
+              1. 件名は必ず「2021.3.13展示会　ご予約希望」としてください。<br />
+              2. 本文に<br />
+              ・ご氏名<br />
+              ・ご住所<br />
+              ・携帯電話番号<br />
+              ・メールアドレス<br />
+              ・ご希望ご予約時間（第一希望と第二希望をお知らせください）<br />
+              をご明記ください。<br />
+              以上をご確認の上、momogusa@momogusa.jpまでメールにてご応募ください。<br />
+              3. ご当選の方のみ5日以内にメールにてお知らせいたします。<br />
+              （迷惑メール設定の解除をお願いします）<br />
+              4. その後、お客様からの確認メールをいただいた時点でご予約が完了となります。<br />
+              <br />
+              <span class="contents__body--gray">＊注意事項</span><br />
+              ・1通につき2名様までご応募可能です。<br />
+              ・同伴の方とはお申し込みが重複しないようにお気をつけください。<br />
+              ・記入情報に不足や誤りが見受けられる場合や、開始時間より前のご応募につきましては無効とさせていただきます。<br />
+              <br />
               <span class="contents__body--head">スケジュール</span><br />
               1.9 sat– 1.11 mon 常設展示<br />
               1.12 tue–1.15 fri 休廊<br />
@@ -213,5 +158,10 @@
   </body>
   <script>
     var scroll = new SmoothScroll('a[href*="#"]');
+  </script>
+  <script>
+    CharacterTypeSeparator(mixtest);
+    CharacterTypeSeparator(mixtest2);
+    CharacterTypeSeparator(mixtest3);
   </script>
 </html>

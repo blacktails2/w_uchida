@@ -7103,256 +7103,91 @@ body {
   font-size: 15px;
   font-family: "Arnhem Fine Normal", "ShueiMinPr6N-L", "秀英明朝 L", "DNPShueiMinPr6-L", serif;
   color: #111111;
-  line-height: 1.7; }
+  line-height: 1.7;
+  overflow-x: hidden; }
   @media screen and (max-width: 1087px) {
     body {
       font-size: 14px;
       line-height: 1.6; } }
 
+.ct_number,
+.ct_alpha {
+  font-size: 1.2em;
+  vertical-align: 2%; }
+
 .head {
   margin: 50px;
-  padding-bottom: 50px; }
+  padding-top: 80px;
+  padding-bottom: 50px;
+  text-align: center; }
   @media screen and (max-width: 768px) {
     .head {
-      margin: 50px 20px;
-      padding-bottom: 20px; } }
+      margin: 120px 20px 50px;
+      padding-bottom: 20px;
+      padding-top: 0px; } }
   .head__title {
     font-family: "Arnhem Fine Normal", "ShueiMinPr6N-L", "秀英明朝 L", "DNPShueiMinPr6-L", serif;
     font-size: 32px;
     letter-spacing: 6px; }
+    @media screen and (max-width: 768px) {
+      .head__title {
+        font-size: 24px;
+        letter-spacing: 4px; } }
   .head__subtitle {
-    font-family: "Arnhem Fine Normal", "ShueiMinPr6N-L", "秀英明朝 L", "DNPShueiMinPr6-L", serif;
+    font-family: "Arnhem Fine Medium", serif;
     color: #888;
-    font-size: 13px;
-    margin-top: -5px;
-    margin-bottom: 40px; }
+    font-size: 32px;
+    margin-top: 10px; }
+    @media screen and (max-width: 768px) {
+      .head__subtitle {
+        font-size: 24px;
+        margin-top: 5px; } }
   .head__date {
     font-family: "Arnhem Fine Medium Italic", serif;
     font-size: 21px;
     line-height: 1.2;
-    margin-bottom: 15px; }
+    margin-top: 20px; }
   .head__close {
-    margin-bottom: 40px;
-    line-height: 1.3; }
+    margin-bottom: 60px;
+    line-height: 1.3;
+    margin-top: 5px; }
+  .head__oneroom {
+    margin-bottom: 30px; }
+    @media screen and (max-width: 768px) {
+      .head__oneroom {
+        font-size: 13px; }
+        .head__oneroom br {
+          display: none; } }
   .head__logo {
     width: 80px;
     display: block;
-    margin-left: -3px;
-    margin-bottom: 5px;
-    transition: all ease 0.4s; }
+    position: fixed;
+    left: 30px;
+    top: 25px;
+    transition: all ease 0.4s;
+    z-index: 99; }
     .head__logo:hover {
       opacity: 0.5; }
-  .head__dm {
-    color: #111;
-    font-size: 18px;
-    border-bottom: 1px solid #111;
-    padding-bottom: 1px;
-    transition: all ease 0.4s; }
-    .head__dm:hover {
-      opacity: 0.5; }
-  .head__artists {
-    margin-bottom: 30px; }
-    .head__artists--gray {
-      color: #888; }
-  .head__greeting {
-    text-align: justify; }
-
-.grid {
-  display: grid;
-  width: 100%;
-  grid-template-columns: 50% 50%; }
-  .grid img {
-    width: 100%; }
-  .grid__item--c {
-    grid-row: 1 / 4;
-    grid-column: 1 / 3;
-    position: relative; }
-    .grid__item--c::after {
-      content: "atelier une place";
-      position: absolute;
-      left: 8px;
-      top: 4px;
-      opacity: 0.5;
-      color: #111;
-      font-size: 14px;
-      font-family: "Arnhem Fine Normal", "ShueiMinPr6N-L", "秀英明朝 L", "DNPShueiMinPr6-L", serif; }
-  .grid__item--h {
-    grid-row: 4 / 6;
-    grid-column: 1;
-    position: relative; }
-    .grid__item--h::after {
-      content: "石原真理";
-      position: absolute;
-      left: 8px;
-      top: 4px;
-      opacity: 0.5;
-      color: #111;
-      font-size: 14px;
-      font-family: "Arnhem Fine Normal", "ShueiMinPr6N-L", "秀英明朝 L", "DNPShueiMinPr6-L", serif; }
-  .grid__item--i {
-    grid-row: 4 / 6;
-    grid-column: 2;
-    position: relative; }
-    .grid__item--i::after {
-      content: "百草アトリエ";
-      position: absolute;
-      left: 8px;
-      top: 4px;
-      opacity: 0.5;
-      color: #111;
-      font-size: 14px;
-      font-family: "Arnhem Fine Normal", "ShueiMinPr6N-L", "秀英明朝 L", "DNPShueiMinPr6-L", serif; }
-  .grid__item--d {
-    grid-row: 10 / 12;
-    grid-column: 1;
-    position: relative; }
-    .grid__item--d::after {
-      content: "KIMURA`";
-      position: absolute;
-      left: 8px;
-      top: 4px;
-      opacity: 0.5;
-      color: #111;
-      font-size: 14px;
-      font-family: "Arnhem Fine Normal", "ShueiMinPr6N-L", "秀英明朝 L", "DNPShueiMinPr6-L", serif; }
-  .grid__item--a {
-    grid-row: 10 / 13;
-    grid-column: 2;
-    position: relative; }
-    .grid__item--a::after {
-      content: "Organic Vegan Sweets";
-      position: absolute;
-      left: 8px;
-      top: 4px;
-      opacity: 0.5;
-      color: #111;
-      font-size: 14px;
-      font-family: "Arnhem Fine Normal", "ShueiMinPr6N-L", "秀英明朝 L", "DNPShueiMinPr6-L", serif; }
-  .grid__item--e {
-    grid-row: 12 / 14;
-    grid-column: 1;
-    position: relative; }
-    .grid__item--e::after {
-      content: "entrepôt";
-      position: absolute;
-      left: 8px;
-      top: 4px;
-      opacity: 0.5;
-      color: #111;
-      font-size: 14px;
-      font-family: "Arnhem Fine Normal", "ShueiMinPr6N-L", "秀英明朝 L", "DNPShueiMinPr6-L", serif; }
-  .grid__item--j {
-    grid-row: 14 / 16;
-    grid-column: 1;
-    position: relative; }
-    .grid__item--j::after {
-      content: "Jingoro";
-      position: absolute;
-      left: 8px;
-      top: 4px;
-      opacity: 0.5;
-      color: #111;
-      font-size: 14px;
-      font-family: "Arnhem Fine Normal", "ShueiMinPr6N-L", "秀英明朝 L", "DNPShueiMinPr6-L", serif; }
-  .grid__item--f {
-    grid-row: 13 / 16;
-    grid-column: 2;
-    position: relative; }
-    .grid__item--f::after {
-      content: "atelier une place";
-      position: absolute;
-      left: 8px;
-      top: 4px;
-      opacity: 0.5;
-      color: #111;
-      font-size: 14px;
-      font-family: "Arnhem Fine Normal", "ShueiMinPr6N-L", "秀英明朝 L", "DNPShueiMinPr6-L", serif; }
-  .grid__item--l {
-    grid-row: 20 / 22;
-    grid-column: 2;
-    position: relative; }
-    .grid__item--l::after {
-      content: "喫茶クロカワ";
-      position: absolute;
-      left: 8px;
-      top: 4px;
-      opacity: 0.5;
-      color: #111;
-      font-size: 14px;
-      font-family: "Arnhem Fine Normal", "ShueiMinPr6N-L", "秀英明朝 L", "DNPShueiMinPr6-L", serif; }
-  .grid__item--k {
-    grid-row: 20 / 22;
-    grid-column: 1;
-    position: relative; }
-    .grid__item--k::after {
-      content: "Organic Vegan Sweets";
-      position: absolute;
-      left: 8px;
-      top: 4px;
-      opacity: 0.5;
-      color: #111;
-      font-size: 14px;
-      font-family: "Arnhem Fine Normal", "ShueiMinPr6N-L", "秀英明朝 L", "DNPShueiMinPr6-L", serif; }
-  .grid__item--b {
-    grid-row: 6 / 10;
-    grid-column: 1 / 3;
-    position: relative; }
-    .grid__item--b::after {
-      content: "山口和宏";
-      position: absolute;
-      left: 8px;
-      top: 4px;
-      opacity: 0.5;
-      color: #111;
-      font-size: 14px;
-      font-family: "Arnhem Fine Normal", "ShueiMinPr6N-L", "秀英明朝 L", "DNPShueiMinPr6-L", serif; }
-  .grid__item--g {
-    grid-row: 16 / 20;
-    grid-column: 1 / 3;
-    position: relative; }
-    .grid__item--g::after {
-      content: "atelier une place";
-      position: absolute;
-      left: 8px;
-      top: 4px;
-      opacity: 0.5;
-      color: #111;
-      font-size: 14px;
-      font-family: "Arnhem Fine Normal", "ShueiMinPr6N-L", "秀英明朝 L", "DNPShueiMinPr6-L", serif; }
-  .grid__item--m {
-    grid-row: 22 / 24;
-    grid-column: 1;
-    position: relative; }
-    .grid__item--m::after {
-      content: "Organic Vegan Sweets";
-      position: absolute;
-      left: 8px;
-      top: 4px;
-      opacity: 0.5;
-      color: #111;
-      font-size: 14px;
-      font-family: "Arnhem Fine Normal", "ShueiMinPr6N-L", "秀英明朝 L", "DNPShueiMinPr6-L", serif; }
-  .grid__item--o {
-    grid-row: 22 / 24;
-    grid-column: 2;
-    height: 100%;
+  .head__border {
+    height: 1px;
     width: 100%;
-    position: relative; }
-  .grid__item--p {
-    grid-row: 1;
-    grid-column: 1 / 3; }
+    background-color: #ccc; }
 
-.contents__newyear {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  font-size: 16px;
-  color: #888; }
+.contents__people {
+  font-family: "Arnhem Fine Medium", "ShueiMinPr6N-B", "秀英明朝 B", "DNPShueiMinPr6-B", serif;
+  font-size: 21px;
+  margin-top: 32px;
+  margin-bottom: 3px;
+  letter-spacing: 0.2em; }
+  @media screen and (min-width: 769px) and (max-width: 1087px) {
+    .contents__people {
+      margin-right: 20px;
+      font-size: 18px; } }
   @media screen and (max-width: 768px) {
-    .contents__newyear {
-      font-size: 14px; } }
+    .contents__people {
+      margin-right: 20px;
+      margin-left: 20px;
+      font-size: 18px; } }
 
 .contents__body {
   letter-spacing: 1px;
@@ -7365,7 +7200,21 @@ body {
     .contents__body {
       margin-right: 20px;
       margin-left: 20px;
-      font-size: 14px; } }
+      font-size: 14px;
+      margin-bottom: 60px; } }
+  .contents__body--right {
+    text-align: right;
+    letter-spacing: 1px; }
+    @media screen and (min-width: 769px) and (max-width: 1087px) {
+      .contents__body--right {
+        margin-right: 20px;
+        font-size: 14px; } }
+    @media screen and (max-width: 768px) {
+      .contents__body--right {
+        margin-right: 20px;
+        margin-left: 20px;
+        font-size: 14px;
+        margin-bottom: 60px; } }
   .contents__body--head {
     font-family: "Arnhem Fine Medium", "ShueiMinPr6N-B", "秀英明朝 B", "DNPShueiMinPr6-B", serif; }
   .contents__body--gray {
