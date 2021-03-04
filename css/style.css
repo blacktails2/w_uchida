@@ -7155,9 +7155,9 @@ body {
     line-height: 1.3;
     margin-top: 5px; }
     .head__enterfirst a {
-      color: #111111;
+      color: #EA3556;
       text-decoration: underline;
-      text-decoration-color: #888;
+      text-decoration-color: #EA3556;
       text-underline-position: under;
       text-underline-offset: 3px;
       transition: 0.5s ease all; }
@@ -7229,6 +7229,8 @@ body {
         margin-bottom: 60px; } }
   .contents__body--head {
     font-family: "Arnhem Fine Medium", "ShueiMinPr6N-B", "秀英明朝 B", "DNPShueiMinPr6-B", serif; }
+  .contents__body--pink {
+    color: #EA3556; }
   .contents__body--gray {
     color: #888; }
   .contents__body--maps {

@@ -1,110 +1,142 @@
 // 1. Import the initial variables
 @import "bulma.min";
 @import "../node_modules/bulma/sass/utilities/_all";
+
 @font-face {
   font-family: "Arnhem Fine Normal";
   src: url("../fonts/ArnhemFine-Normal.woff2") format("woff2");
 }
+
 @font-face {
   font-family: "Arnhem Fine Medium";
   src: url("../fonts/ArnhemFine-Medium.woff2") format("woff2");
 }
+
 @font-face {
   font-family: "Arnhem Fine Medium Italic";
   src: url("../fonts/ArnhemFine-MediumItalic.woff2") format("woff2");
 }
 
-$body: "Arnhem Fine Normal", "ShueiMinPr6N-L", "秀英明朝 L", "DNPShueiMinPr6-L", serif;
-$bold: "Arnhem Fine Medium", "ShueiMinPr6N-B", "秀英明朝 B", "DNPShueiMinPr6-B", serif;
-$head-it: "Arnhem Fine Medium Italic", serif;
-$head-en: "Arnhem Fine Medium", serif;
+$body: "Arnhem Fine Normal",
+"ShueiMinPr6N-L",
+"秀英明朝 L",
+"DNPShueiMinPr6-L",
+serif;
+$bold: "Arnhem Fine Medium",
+"ShueiMinPr6N-B",
+"秀英明朝 B",
+"DNPShueiMinPr6-B",
+serif;
+$head-it: "Arnhem Fine Medium Italic",
+serif;
+$head-en: "Arnhem Fine Medium",
+serif;
 
 $gray: #888;
 $lightgray: #ccc;
+$pink: #EA3556;
 
 img {
   vertical-align: top;
 }
+
 body {
   font-size: 15px;
   font-family: $body;
   color: #111111;
   line-height: 1.7;
   overflow-x: hidden;
+
   @include touch {
     font-size: 14px;
     line-height: 1.6;
   }
 }
+
 .ct_number,
 .ct_alpha {
   font-size: 1.2em;
   vertical-align: 2%;
 }
+
 .head {
   margin: 50px;
   padding-top: 80px;
   padding-bottom: 50px;
   text-align: center;
+
   @include mobile {
     margin: 120px 20px 50px;
     padding-bottom: 20px;
     padding-top: 0px;
   }
+
   &__title {
     font-family: $body;
     font-size: 32px;
     letter-spacing: 6px;
+
     @include mobile {
       font-size: 24px;
       letter-spacing: 4px;
     }
   }
+
   &__subtitle {
     font-family: $head-en;
     color: $gray;
     font-size: 32px;
     margin-top: 10px;
+
     @include mobile {
       font-size: 24px;
       margin-top: 5px;
     }
   }
+
   &__date {
     font-family: $head-it;
     font-size: 21px;
     line-height: 1.2;
     margin-top: 20px;
   }
+
   &__close {
     line-height: 1.3;
     margin-top: 5px;
   }
+
   &__enterfirst {
     margin-bottom: 60px;
     line-height: 1.3;
     margin-top: 5px;
+
     a {
-      color: #111111;
+      color: $pink;
       text-decoration: underline;
-      text-decoration-color: $gray;
+      text-decoration-color: $pink;
       text-underline-position: under;
       text-underline-offset: 3px;
       transition: 0.5s ease all;
+
       &:hover {
         opacity: 0.5;
       }
     }
   }
+
   &__oneroom {
     margin-bottom: 30px;
+
     @include mobile {
       font-size: 13px;
+
       br {
         display: none;
       }
     }
   }
+
   &__logo {
     width: 80px;
     display: block;
@@ -113,10 +145,12 @@ body {
     top: 25px;
     transition: all ease 0.4s;
     z-index: 99;
+
     &:hover {
       opacity: 0.5;
     }
   }
+
   &__border {
     height: 1px;
     width: 100%;
@@ -131,36 +165,44 @@ body {
     margin-top: 32px;
     margin-bottom: 3px;
     letter-spacing: 0.2em;
+
     @include tablet-only {
       margin-right: 20px;
       font-size: 18px;
     }
+
     @include mobile {
       margin-right: 20px;
       margin-left: 20px;
       font-size: 18px;
     }
   }
+
   &__body {
     letter-spacing: 1px;
     text-align: justify;
+
     @include tablet-only {
       margin-right: 20px;
       font-size: 14px;
     }
+
     @include mobile {
       margin-right: 20px;
       margin-left: 20px;
       font-size: 14px;
       margin-bottom: 60px;
     }
+
     &--right {
       text-align: right;
       letter-spacing: 1px;
+
       @include tablet-only {
         margin-right: 20px;
         font-size: 14px;
       }
+
       @include mobile {
         margin-right: 20px;
         margin-left: 20px;
@@ -168,30 +210,41 @@ body {
         margin-bottom: 60px;
       }
     }
+
     &--head {
       font-family: $bold;
     }
+    &--pink {
+      color: $pink;
+    }
+
     &--gray {
       color: $gray;
     }
+
     &--maps {
       color: #111;
       border-bottom: 1px solid #111;
       transition: ease all 0.4s;
+
       &:hover {
         opacity: 0.5;
       }
     }
   }
 }
+
 .space {
   height: 200px;
+
   @include mobile {
     height: 50px;
   }
 }
+
 .maps {
   height: 800px;
+
   @include mobile {
     height: 400px;
   }
