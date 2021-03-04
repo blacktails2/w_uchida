@@ -77,9 +77,24 @@ body {
     margin-top: 20px;
   }
   &__close {
+    line-height: 1.3;
+    margin-top: 5px;
+  }
+  &__enterfirst {
     margin-bottom: 60px;
     line-height: 1.3;
     margin-top: 5px;
+    a {
+      color: #111111;
+      text-decoration: underline;
+      text-decoration-color: $gray;
+      text-underline-position: under;
+      text-underline-offset: 3px;
+      transition: 0.5s ease all;
+      &:hover {
+        opacity: 0.5;
+      }
+    }
   }
   &__oneroom {
     margin-bottom: 30px;
